@@ -4,6 +4,34 @@ public class PracticeProblem {
 
 	}
 
+	public static boolean validIndex(int[] arr, int index) {
+			try {
+				arr[index] = arr[index];
+				
+			} catch (IndexOutOfBoundsException e) {
+					return false;
+		
+	}
+	return true;
 	
 
+	}
+
+	public static int divide(int a, int b) {
+		try {
+			return a / b;
+
+		} catch (ArithmeticException e) {
+			return 0;
+		}
+	}
+
+	public static int safeConvertStringtoInt(String s) {
+		try {
+			return Integer.parseInt(s);
+		
+		} catch (NumberFormatException e) {
+			return 0;	
+		}
+	}
 }
